@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #202124;
+  height: 100%;
+}
+
+input[type=text] {
+  height: 44px;
+  width: 565px;
+  border-radius: 40px;
+  padding-left: 20px;
+  border: 1px solid #888888;
+  background-color: #202124;
+}
+
+@media (max-width: 700px) {
+  input[type=text] {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  input[type=text] {
+    width: 336px;
+  }
+}
+.searchbox, form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+input[type=text]:focus, input[type=text]:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 19px rgb(0, 0, 0);
+  background-color: #303134;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #303134;
+  padding: 10px;
+  margin: 4px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  border: 1px solid #888888;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h6 {
+  font-size: 1rem;
+  transform: translateY(-400%);
+  margin-bottom: -2%;
+  color: #4487f6;
+}
+
+a {
+  margin: 24px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: right;
+  z-index: 1;
+}
+
+::-moz-selection {
+  background-color: #ffffff;
+  color: #202124;
+}
+
+::selection {
+  background-color: #ffffff;
+  color: #202124;
+}
+
+.advanced {
+  text-align: left;
+  z-index: -1;
+}
+.advanced .searchbox {
+  text-align: left;
+}
+.advanced .searchbox .labels {
+  display: inline-block;
+  width: 240px;
+}
+.advanced #advanced-btn {
+  background-color: #4487f6;
+  color: #202124;
+}
+.advanced #advanced-btn:hover {
+  background-color: #8ab4f8;
+}
+.advanced h1 {
+  margin-bottom: -1%;
+  margin-top: 10%;
+}
+.advanced h2 {
+  color: #f28b82;
+  font-size: 2rem;
+  margin-bottom: -0.4%;
+}/*# sourceMappingURL=styles.css.map */

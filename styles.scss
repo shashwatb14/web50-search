@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$white: #ffffff;
+$light: #888888;
+$dark: #202124;
+$dark-selection: #303134;
+$blue: #4487f6;
+$light-blue: #8ab4f8;
+$red: #f28b82;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: $white;
+    text-decoration: none;
+    transition: .2s;
+    user-select: none;
+}
+
+body {
+    background-color: $dark;
+    height: 100%;
+}
+
+input[type="text"] {
+    height: 44px;
+    width: 565px;
+    border-radius: 40px;
+    padding-left: 20px;
+    border: 1px solid $light;
+    background-color: $dark;
+}
+
+@media (max-width: 700px) {
+    input[type="text"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    input[type="text"] {
+        width: 336px;
+    }
+}
+
+.searchbox, form {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="text"]:focus, input[type="text"]:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 1);
+    background-color: $dark-selection;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: $dark-selection;
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid $light;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h6 {
+    font-size: 1rem;
+    transform: translateY(-400%);
+    margin-bottom: -2%;
+    color: $blue;
+}
+
+a {
+    margin: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: right;
+    z-index: 1;
+}
+
+::selection {
+    background-color: $white;
+    color: $dark;
+}
+
+.advanced {
+    text-align: left;
+    z-index: -1;
+
+    .searchbox {
+        text-align: left;
+
+        .labels {
+            display: inline-block;
+            width: 240px;
+        }
+    }
+
+    #advanced-btn {
+        background-color: $blue;
+        color: $dark;
+    }
+
+    #advanced-btn:hover {
+        background-color: $light-blue;
+    }
+
+    h1 {
+        margin-bottom: -1%;
+        margin-top: 10%;
+    }
+
+    h2 {
+        color: $red;
+        font-size: 2rem;
+        margin-bottom: -0.4%;
+    }
+}
