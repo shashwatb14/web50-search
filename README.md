@@ -2,7 +2,7 @@
 
 [Video demo](https://youtu.be/CutSNPBC2MI)
 
-[Link to Github Pages](https://novas-coder.github.io/web50-search/)
+[Link to Github Pages](https://shash-b.github.io/web50-search/)
 
 ---
 
