@@ -1,5 +1,4 @@
 # web50-search
-
 [Video demo](https://youtu.be/CutSNPBC2MI) | [Link to Github Pages](https://shash-b.github.io/web50-search/)
 
 ---
